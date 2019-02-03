@@ -2,13 +2,12 @@ var i;
 var j;
 var inHtml = "";
 for (i = 2; i < 10; i++) {
-  //block = "num" + i;
-  //document.getElementsByClassName(block)
-  inHtml += "<div class='content'><h1>" + i + "</h1>";
-  for (j = 1; j < 10; j++) {
-    //document.write(i+"x"+j+"="+i*j+"\n");
-    // document.
-    inHtml += i + "x" + j + "=" + i * j;
+  inHtml += "<div class='content'><div class='h1'>" + i + "</div>" ;
+  for (j = 1; j < 4; j++) {
+    inHtml += "<div class='item-left'>"+ i + " x " + j + " = " + i * j + "</div>";
+  }
+  for (j = 4; j < 10; j++) {
+    inHtml += "<div class='item-right'>"+ i + " x " + j + " = " + i * j + "</div>";
   }
   inHtml += "</div>";
 }
